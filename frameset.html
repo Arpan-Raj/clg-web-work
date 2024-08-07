@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frame1{
+            background-color: lightblue;
+        }
+        .frame2-1{
+            background-color: gray;
+        }
+        .frame2-2{
+            background-color: yellow;
+        }
+        .frame2-3{
+            background-color: orange;
+        }
+        .frame3{
+            background-color: purple;
+        }
+    </style>
+</head>
+<frameset rows="50%,*,*">
+    <frameset>
+        <frame name="frame1" class="frame1" src="css flex.jpg">
+    </frameset>
+     </frame>
+    <frameset cols="*,*,*">
+        <frame name="frame2.1" class="frame2-1"></frame>
+        <frame name="frame2.2" class="frame2-2"></frame>
+        <frame name="frame2.3" class="frame2-3"></frame>
+    </frameset>
+    <frame name="frame3" class="frame3"></frame>
+</frameset>
+</html>

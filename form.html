@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 50%;
+            margin: auto;
+            margin-top: 15vh;
+            border: 2px solid black;
+            padding: 2vh 4vw 2vh 2vw;
+            box-shadow: 5px 5px 5px gray;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="number"],input[type="password"], input[type="date"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button{
+            width: 40%;
+            height: 6vh;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+            transition: .2s linear;
+            font-size: medium;
+        }
+        button:hover{
+            background-color: green;
+            color: white;
+            transition: .2s linear;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="Hobby" required>Hobby:</label>
+            <input type="checkbox" id="Hobby1" name="Hobby1" placeholder="Cricket"  >Cricket
+            <input type="checkbox" id="Hobby2" name="Hobby2" placeholder="Football"  >Football
+            <input type="checkbox" id="Hobby3" name="Hobby3" placeholder="Soccer"  >Soccer
+            <input type="checkbox" id="Hobby4" name="Hobby4" placeholder="Kabaddi"  >Kabaddi
+        </div>
+        <div>
+            <label for="Gender" required>Gender:</label>
+            <input type="radio" id="Gender1" name="Male" placeholder="Male" >Male
+            <input type="radio" id="Gender2" name="Female" placeholder="Female" >Male
+        </div>
+        <div>
+            <label for="Name" >Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter Name" required>
+        </div>
+        <div>
+            <label for="Email" >Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="Enter Email" required>
+        </div>
+        <div>
+            <label for="Age" >Age:</label>
+            <input type="number" id="Age" name="Age" placeholder="Enter Age" required>
+        </div>
+        <div>
+            <label for="DOB" >DOB:</label>
+            <input type="date" id="DOB" name="DOB" placeholder="Enter DOB" required>
+        </div>
+        <div>
+            <label for="Password" >Password:</label>
+            <input type="password" id="Password" name="Password" placeholder="Enter Password" required>
+        </div>
+        <button type="submit" title="submitForm">Submit</button>
+    </form>
+</body>
+</html>
