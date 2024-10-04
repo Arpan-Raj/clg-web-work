@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Model</title>
+    <style>
+        input{
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .container{
+            width: 50%;
+            height: 80vh;
+            margin: auto;
+            margin-top: 8vh;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>  
+    <div class="container">
+    <input type="button" value="Click Me to see form" onclick="showform()" />
+      <div id="mylocation"></div>
+    <script type="text/javascript">
+      function showform() {
+        var data =
+          "<form>\
+        <div>\
+            <label></label>\
+            <input type='text' title='Name' placeholder='Enter Name'>\
+        </div>\
+        <div>\
+            <label></label>\
+            <input type='number' title='age' placeholder='Enter Age'>\
+        </div>\
+        <div>\
+            <label></label>\
+            <input type='date' title='dob'>\
+        </div>\
+        <div>\
+            <label></label>\
+            <input type='text' title='city' placeholder='Enter City'>\
+        </div>\
+      </form>";
+        document.getElementById("mylocation").innerHTML = data;
+      }
+    </script>
+    </div>    
+  </body>
+</html>
